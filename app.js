@@ -41,4 +41,7 @@ connection
     .on('disconnected', connect)
     .once('open', importDir);
 
-module.exports = app;
+module.exports = {
+    app,
+    connection  
+};

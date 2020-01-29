@@ -3,10 +3,9 @@
 /**
  * Module dependencies.
  */
-const app = require('../app');
+const app = require('../app').app;
 const debug = require('debug')('node-poc:server');
 const http = require('http');
-
 /**
  * Get port from environment and store in Express.
  */
