@@ -15,7 +15,7 @@ PersonSchema.set('toJSON', {
 
 const Person = mongoose.model('Person', PersonSchema, 'person');
 
-exports.list = () => {
+exports.exportCSV = () => {
     return new Promise((resolve, reject) => {
         Person.find().exec((err, person) => {
             if (err)
